@@ -4554,8 +4554,8 @@ h1, h2, h3, h4, h5, h6 { text-transform: none; letter-spacing: 0.02em; }
 }
 
 .pmcap-logo {
-  height: 1090px;
-  width: 1000px;
+  height: 590px !important;
+  width: 500px !important;
 }
 
 /* Title: first letter caps, rest normal */
