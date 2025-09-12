@@ -4974,3 +4974,13 @@ details[open] > .schedule-summary::before {
   border-radius: 10px;
   box-shadow: 0 12px 32px rgba(0,0,0,0.35);
 }
+.pmcap-center {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.pmcap-logo {
+  width: 300px;   /* increase from default */
+  max-width: 100%;
+  height: auto;
+}
