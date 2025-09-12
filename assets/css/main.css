@@ -4943,3 +4943,34 @@ details[open] > .schedule-summary::before {
   /* no width; let the .expander > summary rules above handle visual layout */
   padding: 1.1rem 1.5rem 1.9rem !important;
 }
+.campus-photo-row {
+  display: flex;
+  gap: 1.5rem;              /* space between the two images */
+  justify-content: center;  /* center them in the row */
+}
+
+.campus-photo-row .campus-photo img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;         /* same constraint for both */
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
+.campus-photo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pmcap-image {
+  margin-top: 1rem;       /* space below the campus map */
+  text-align: center;
+}
+
+.pmcap-image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;         /* same constraint for both */
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
