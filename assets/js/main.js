@@ -234,7 +234,7 @@ Yogita Kumari,IUCAA Pune
 
   // 2) Elements
   const expander = document.getElementById('participantsExpander'); // <details id="participantsExpander">
-  const tbody = document.querySelector('#participants tbody');
+  const tbody = document.querySelector('#participants tbody, #participants_ch7 tbody');
   let populated = false;
 
   // 3) Populate once
