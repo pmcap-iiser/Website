@@ -163,73 +163,65 @@ $(function() {
 $(function () {
   // 1) CSV data (Name,Affiliation)
   const csvData = `
-Abhishri Shrivastava,TIFR Mumbai
-Agniva Roychowdhury,NCRA Pune
-Amol Dighe,TIFR Mumbai
-Anargha Mondal,IISER Pune
-Animesh Maji,IISER Pune
-Animesh sah,TIFR Mumbai
-Anirban Chakraborty,NCRA Pune
-Archana Pai,IIT Bombay
-Arka Banerjee,IISER Pune
-Arun Thalapillil,IISER Pune
-Aseem Paranjape,IUCAA Pune
-Avinash Tiwari,IUCAA Pune
-Bhooshan Gadre,IUCAA Pune
-Brijanshi,IISER Pune
-Chandrayee Maitra,IUCAA Pune
-Dhruv Satra,IISER Pune
-Diptimoy Ghosh,IISER Pune
-Eishica Chand,IISER Pune
-Harsh Mehta,TIFR Mumbai
-Harshit Raj,TIFR Mumbai
-Jahaan Thakkar,TIFR Mumbai
-Khushi Lalit,IUCAA Pune
-Manibrata Sen,IIT Bombay
-Mohamed Rameez,TIFR Mumbai
-Navya Saraswat,TIFR Mumbai
-Ojas Patil,IISER Pune
-Om Kishor Hebbar,IISER Pune
-Pooja Rani,TIFR Mumbai
-Pralay Biswas,NCRA Pune
-Prashant Varshney,TIFR Mumbai
-Premvijay Velmani,TIFR Mumbai
-Prolay Chanda,TIFR Mumbai
-Pulak Mohapatra,NCRA Pune
-Raghav Wani,IISER Pune
-Raghunathan Srianand,IUCAA Pune
-Rahul S Hejjaji,IISER Pune
-Ranit Behera,IUCAA Pune
-Sachin Jain,IISER Pune
-Saee Dhawalikar,IUCAA Pune
-Samsuzzaman Afroz,TIFR Mumbai
-Sanjit Mitra,IUCAA Pune
-Saptarshi Pandey,IISER Pune
-Saptarshi Sarkar,NCRA Pune
-Sayantan Chakraborty,IISER Pune
-Shadab Alam,TIFR Mumbai
-Shivam Gola,IIT Bombay
-Shreya Mukherjee,IUCAA Pune
-Shubham Sati,IUCAA Pune
-Siddhant sen,IISER Pune
-Soumak Maitra,TIFR Mumbai
-Sourav Das,IUCAA Pune
-Subha Majumdar,TIFR Mumbai
-Subhankar Datta,IISER Pune
-Suchira Sarkar,TIFR Mumbai
-Supriyo Saha,TIFR Mumbai
-Surhud More,IUCAA Pune
-Susmita Adhikari,IISER Pune
-Swanith Upadhye,TIFR Mumbai
-Tushar Mudgal,IISER Pune
-Vaidik Prasal,IISER Pune
-Vikhyat Sharma,IISER Pune
-Viswesh Marthi,NCRA Pune
-Vivek Kumar Jha,NCRA Pune
-Yash Dadhwal,IISER Pune
-Yash Koushal,IISER Pune
-Yogesh Wadadekar,NCRA Pune
-Yogita Kumari,IUCAA Pune
+Aman Awasthi,	IIT Bombay
+Anargha Mondal,	IISER Pune
+Animesh Maji,	IISER Pune
+Animesh Sah,	TIFR Mumbai
+Aniruddha Chakraborty,	TIFR Mumbai
+Ankita Sarkar,	St. Xavier's College&#44; Mumbai
+Arka Banerjee,	IISER Pune
+Ashutosh Joshi,	TIFR Mumbai
+Debaditya Chakrabarti,	IISER Pune
+Diptimoy Ghosh,	IISER Pune
+Eishica Chand,	IISER Pune
+Gagan Arora,	TIFR Mumbai
+Gouri Vandana A S,	IISER Pune
+Gowri S Nair,	TIFR Mumbai
+Harsh Mehta,	TIFR Mumbai
+Hridya R,	TIFR Mumbai
+Jahaan Thakkar,	TIFR Mumbai
+Jatin kumar,	NCRA
+Jui Mahajan,	Fergusson College
+Khushi Lalit,	IUCAA
+Manibrata Sen,	IIT Bombay
+Mohd Asim Ansari,	IUCAA
+Nitish Kumar Meher,	IUCAA
+Om Kishor Hebbar,	IISER Pune
+Pooja Rani,	TIFR Mumbai
+Pralay Biswas,	NCRA
+Purushottam Sahu,	IIT Bombay
+Rahul S Hejjaji,	IISER Pune
+Rishi Khatri,	TIFR Mumbai
+Rohan Chakraborty,	TIFR Mumbai
+Sadashiv Sahoo,	IIT Bombay
+Saptarshi Sarkar,	NCRA
+Sayan Maity,	IIT Bombay
+Shadab Alam,	TIFR Mumbai
+Shamik Niyogi,	IIT Bombay
+Shivam Gola,	IIT Bombay
+Shivesh Tuli,	IISER Pune
+Shreya Mukherjee,	IUCAA
+Shubham Sati,	IUCAA
+Siddhant Sen,	IISER Pune
+Soham Sahasrabuddhe,	IIT Bombay
+Soumak Maitra,	TIFR Mumbai
+Soumen Kumar Manna,	IIT Bombay
+Soumil Sahu,	IUCAA
+Sourav Chatterjee,	TIFR Mumbai
+Sourav Das,	IUCAA
+Suchira Sarkar,	TIFR Mumbai
+Sukhdeep Singh Gill,	TIFR Mumbai
+Sumit Kumar Adhya,	IIT Bombay
+Supriyo Saha,	TIFR Mumbai
+Susmita Adhikari,	IISER Pune
+Suvodip Mukherjee,	TIFR Mumbai
+Swanith Upadhye,	TIFR Mumbai
+Swarajit Dhar,	TIFR Mumbai
+Varun Bhat,	NCRA
+Vikhyat Sharma,	IISER Pune
+Yash Koushal,	IISER Pune
+Yogesh Wadadekar,	NCRA
+Yogita Kumari,	IUCAA
 `.trim();
 
   // 2) Elements
