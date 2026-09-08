@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Participants</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h2>Participants List</h2>
+  <table id="participants">
+    <thead>
+      <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Affiliation</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // Paste your CSV data here (Name,Affiliation)
+    const csvData = `
+Aman Awasthi,	IIT Bombay
+Anargha Mondal,	IISER Pune
+Animesh Maji,	IISER Pune
+Animesh Sah,	TIFR Mumbai
+Aniruddha Chakraborty,	TIFR Mumbai
+Ankita Sarkar,	St. Xavier's College&#44; Mumbai
+Arka Banerjee,	IISER Pune
+Ashutosh Joshi,	TIFR Mumbai
+Debaditya Chakrabarti,	IISER Pune
+Diptimoy Ghosh,	IISER Pune
+Eishica Chand,	IISER Pune
+Gagan Arora,	TIFR Mumbai
+Gouri Vandana A S,	IISER Pune
+Gowri S Nair,	TIFR Mumbai
+Harsh Mehta,	TIFR Mumbai
+Hridya R,	TIFR Mumbai
+Jahaan Thakkar,	TIFR Mumbai
+Jatin kumar,	NCRA
+Jui Mahajan,	Fergusson College
+Khushi Lalit,	IUCAA
+Manibrata Sen,	IIT Bombay
+Mohd Asim Ansari,	IUCAA
+Nitish Kumar Meher,	IUCAA
+Om Kishor Hebbar,	IISER Pune
+Pooja Rani,	TIFR Mumbai
+Pralay Biswas,	NCRA
+Purushottam Sahu,	IIT Bombay
+Rahul S Hejjaji,	IISER Pune
+Rishi Khatri,	TIFR Mumbai
+Rohan Chakraborty,	TIFR Mumbai
+Sadashiv Sahoo,	IIT Bombay
+Saptarshi Sarkar,	NCRA
+Sayan Maity,	IIT Bombay
+Shadab Alam,	TIFR Mumbai
+Shamik Niyogi,	IIT Bombay
+Shivam Gola,	IIT Bombay
+Shivesh Tuli,	IISER Pune
+Shreya Mukherjee,	IUCAA
+Shubham Sati,	IUCAA
+Siddhant Sen,	IISER Pune
+Soham Sahasrabuddhe,	IIT Bombay
+Soumak Maitra,	TIFR Mumbai
+Soumen Kumar Manna,	IIT Bombay
+Soumil Sahu,	IUCAA
+Sourav Chatterjee,	TIFR Mumbai
+Sourav Das,	IUCAA
+Suchira Sarkar,	TIFR Mumbai
+Sukhdeep Singh Gill,	TIFR Mumbai
+Sumit Kumar Adhya,	IIT Bombay
+Supriyo Saha,	TIFR Mumbai
+Susmita Adhikari,	IISER Pune
+Suvodip Mukherjee,	TIFR Mumbai
+Swanith Upadhye,	TIFR Mumbai
+Swarajit Dhar,	TIFR Mumbai
+Varun Bhat,	NCRA
+Vikhyat Sharma,	IISER Pune
+Yash Koushal,	IISER Pune
+Yogesh Wadadekar,	NCRA
+Yogita Kumari,	IUCAA
+
+`;
+
+    const lines = csvData.trim().split("\n");
+    const tbody = document.querySelector("#participants tbody");
+
+    lines.forEach((line, index) => {
+      const [name, affiliation] = line.split(",");
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${name.trim()}</td>
+        <td>${affiliation.trim()}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  </script>
+</body>
+</html>
